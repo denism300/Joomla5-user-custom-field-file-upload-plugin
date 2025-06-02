@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field name="a"
+				type="note"
+				label="PLG_FIELDS_UPLOAD_FILE_UPLOAD_SETTINGS" />
+			<field name="upload_folder"
+				type="text"
+				label="PLG_FIELDS_UPLOAD_FOLDER"
+				description="PLG_FIELDS_UPLOAD_FOLDER_DESC"
+				hint="media/upload"
+				default="media/upload"
+				class="input-xlarge" />
+			<field name="limit_files"
+				type="number"
+				label="PLG_FIELDS_UPLOAD_LIMIT_FILES"
+				description="PLG_FIELDS_UPLOAD_LIMIT_FILES_DESC"
+				class="input-small"
+				default="1"
+				min="0" />
+			<field name="max_file_size"
+				type="number"
+				label="PLG_FIELDS_UPLOAD_MAX_FILE_SIZE"
+				description="PLG_FIELDS_UPLOAD_MAX_FILE_SIZE_DESC"
+				class="input-small"
+				min="0"
+				default="0"
+				hint="1" />
+			<field name="accept"
+				type="text"
+				label="PLG_FIELDS_UPLOAD_TYPES"
+				description="PLG_FIELDS_UPLOAD_TYPES_DESC"
+				hint=".jpg, .png, .gif"
+				default=".jpg, .png, .gif" />
+		</fieldset>
+	</fields>
+</form>

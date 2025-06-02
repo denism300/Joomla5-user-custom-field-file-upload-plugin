@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin"
+	group="fields"
+	method="upgrade">
+	<name>plg_fields_upload</name>
+	<author>Denis Mukhin</author>
+	<creationDate>May, 2025</creationDate>
+	<copyright>Copyright (c) 2025 Denis Mukhin. All rights reserved.</copyright>
+	<license>GNU GPLv3 (http://www.gnu.org/licenses/gpl.html) or later</license>
+	<authorEmail>info@e-commerce24.ru</authorEmail>
+	<authorUrl>https://e-commerce24.ru</authorUrl>
+	<version>1.0</version>
+	<description>PLG_FIELDS_UPLOAD_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Fields\Upload</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder plugin="upload">services</folder>
+		<folder>params</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_fields_upload.ini</language>
+		<language tag="en-GB">en-GB/plg_fields_upload.sys.ini</language>
+		<language tag="ru-RU">ru-RU/plg_fields_upload.ini</language>
+		<language tag="ru-RU">ru-RU/plg_fields_upload.sys.ini</language>
+	</languages>
+	<media folder="media"
+		destination="plg_fields_upload">
+		<folder>js</folder>
+		<folder>css</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="a"
+					type="note"
+					label="PLG_FIELDS_UPLOAD_FILE_UPLOAD_SETTINGS" />
+				<field name="upload_folder"
+					type="text"
+					label="PLG_FIELDS_UPLOAD_FOLDER"
+					description="PLG_FIELDS_UPLOAD_FOLDER_DESC"
+					hint="media/upload"
+					default="media/upload"
+					class="input-xlarge" />
+				<field name="limit_files"
+					type="number"
+					label="PLG_FIELDS_UPLOAD_LIMIT_FILES"
+					description="PLG_FIELDS_UPLOAD_LIMIT_FILES_DESC"
+					class="input-small"
+					default="1"
+					min="0" />
+				<field name="max_file_size"
+					type="number"
+					label="PLG_FIELDS_UPLOAD_MAX_FILE_SIZE"
+					description="PLG_FIELDS_UPLOAD_MAX_FILE_SIZE_DESC"
+					class="input-small"
+					min="0"
+					default="0"
+					hint="1" />
+				<field name="accept"
+					type="text"
+					label="PLG_FIELDS_UPLOAD_TYPES"
+					description="PLG_FIELDS_UPLOAD_TYPES_DESC"
+					hint=".jpg, .jpeg, .png, .gif"
+					default=".jpg, .jpeg, .png, .gif" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
